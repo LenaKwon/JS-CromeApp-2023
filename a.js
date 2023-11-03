@@ -1,3 +1,4 @@
+// 과제4: js로 html요소를 변경하기. 
 // <⚠️ DONT DELETE THIS ⚠️>
 //import "./styles.css";
 const colors = ["#1abc9c", "#3498db", "#9b59b6", "#f39c12", "#e74c3c"];

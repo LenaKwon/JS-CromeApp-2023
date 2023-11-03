@@ -1,4 +1,18 @@
 body {
     font-family: sans-serif;
+    background-color: cornflowerblue;
 }
-  
+h1 {
+    color: antiquewhite;
+}
+.clicked{
+    color:tomato;
+    transition: color.2s ease-in-out;
+} 
+.lena-font{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.resized{
+    background-color:crimson;
+    transition: color.2s ease-in-out;
+} 
