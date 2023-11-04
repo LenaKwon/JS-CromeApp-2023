@@ -1,6 +1,7 @@
 body {
     font-family: sans-serif;
     background-color: cornflowerblue;
+    display: flex;
 }
 h1 {
     color: antiquewhite;
@@ -12,7 +13,14 @@ h1 {
 .lena-font{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.resized{
-    background-color:crimson;
-    transition: color.2s ease-in-out;
-} 
+.bigScreen {
+    background-color: #f1c40f;
+}
+  
+.mediumScreen {
+    background-color: #9b59b6;
+}
+  
+.smallScreen {
+    background-color: #3498db;
+}
