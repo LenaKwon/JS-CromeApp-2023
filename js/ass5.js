@@ -1,6 +1,9 @@
 // 과제5: 브라우저 변경에 따른 배경색 바꾸기
 
-// #submited my code
+// # my code
+// 내 코드는 js 파일에서 css 코드 분리도 못했고, 
+//classList의 add,remove쓰지 않음
+
 // function handleResize() {
 //   let width = window.innerWidth;
 //   if (width < 200) {
@@ -14,7 +17,9 @@
 
 // window.addEventListener("resize", handleResize);
 
-//solution
+
+
+// solution
 const body = document.body;
 
 const BIG_SCREEN = "bigScreen";
