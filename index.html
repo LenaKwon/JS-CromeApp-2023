@@ -1,5 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/style_guess.css" rel="stylesheet">
+  <title>Guess Number Game</title>
+</head>
+<body>
+  
+    <h1>Guess Number Game</h1>
+    <form id="form">
+      <div>
+        <div class="div-children"><h3>Generate a number between 0 and</h3></div> 
+        <div class="div-children"><input type="number" id="maxinput" min="0" max="100" required/></div> 
+      </div>
+      <div>
+        <div class="div-children"><h5>Guess the number:</h5></div> 
+        <div class="div-children"> <input type="number" id="guessinput" min="0" max="100" required/> <button>  play </button></div>
+      </div> 
+    </form>
+   
+    <h5 id="displayNum"></h5>
+    <h4 id="result"><strong></strong></h4>
+ 
+  <script src="js/guessNumber.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+<!-- login -->
+<!-- <!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,11 +42,11 @@
     <title>Momentum App</title>
   </head>
   <body>
-    <form id="login-form" class="hidden">
+    <form id="login-form" class="hidden" >
       <input type="text" placeholder="What is your name?" />
       <button>Log In</button>
     </form>
     <h1 id="greeting" class="hidden"></h1>
-    <script src="js/login.js"></script>
+    <script src="js/loginCode.js"></script>
   </body>
-</html>
+</html> -->
