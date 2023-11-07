@@ -16,7 +16,7 @@ bgimage.src = `img/${chosenImage}`;
 document.body.appendChild(bgimage);
 
 // 파일경로 주의점!
-//`img/${chosenImage}` 에 슬래쉬 하나 더 붙여서 에러났었음.
+// `img/${chosenImage}` 에 슬래쉬 하나 더 붙여서 에러났었음.
 //   / # 가장 최상의 Directory (root)
 //  ./ # 현재 Directory
 // ../ # 상위 Directory
@@ -24,7 +24,7 @@ document.body.appendChild(bgimage);
 
 // 아래 코드로 할 수도 있지만, style은 css 하는게 좋다고 생각함.
 // document.body.style.backgroundImage = `url(img/${chosenImage})`;
-//document.body.style.backgroundPosition = "top";
+// document.body.style.backgroundPosition = "top";
 // document.body.style.backgroundRepeat = "no-repeat";
 // document.body.style.backgroundSize = "cover";
 // document.body.style.backgroundAttachment = "fixed";
