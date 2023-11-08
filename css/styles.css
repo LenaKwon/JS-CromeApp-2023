@@ -50,6 +50,9 @@ input[type='text']{
 #clock{
     opacity: 0.7; 
 }
+#xclock{
+    opacity: 0.7; 
+}
 img {
     position:absolute;
     width:100%;
