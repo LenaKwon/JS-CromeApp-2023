@@ -9,27 +9,35 @@
     <title>Momentum App</title>
   </head>
   <body>
+
   <div class="projects-grid">
-      <div>
-    <h4 id="clock"></h4>
-    <h4 id="xclock"></h4>
-      </div>
-    <form id="login-form" class="hidden" >
-      <input type="text" placeholder="What is your name?" />
-      <button class="btn">Log In</button>
-    </form>
-    <h1 id="greeting" class="hidden"></h1>
-    <form id="todoForm" >
-      <input type="text" placeholder="Write a To-do and press the enter" />
-      <button class="btn">Enter</button>
-    </form>
-  
+    <div id="clocks">
+      <h4 id="clock"></h4>
+      <h4 id="xclock"></h4>
+    </div>
+    <div>
+      <form id="login-form" class="hidden" >
+        <input type="text" placeholder="What is your name?" />
+        <button class="btn">Log In</button>
+      </form>
+      <h1 id="greeting" class="hidden"></h1>
+    </div>
+    <div>
+      <form id="todoForm" >
+        <input type="text" placeholder="Write a To-do and press the enter" />
+        <button class="btn">Enter</button>
+      </form>
+      <ul id="todoList">To-Do</ul> 
+    </div>
     <div id="quote">
+      <h4></h4>
       <h5></h5>
-      <h6></h6>
+    </div>
+    <div id="weather">
+
     </div>
     <div></div>
-    <ul id="todoList">To-Do</ul>
+    
     <script src="js/loginCode.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/quotes.js"></script>

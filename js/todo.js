@@ -15,7 +15,18 @@ function listUp(todoinput){
     li.appendChild(span);
     span.innerText=todoinput;
     todoList.appendChild(li);
-    
+    localStorage.setItem('todolist',todoinput);
+}
+function reList(todoinput){
+    listUp(todoinput);
+    todoForm.addEventListener("submit",handleTodoSubmit);
 }
 
-todoForm.addEventListener("submit",handleTodoSubmit)
+
+const savedList=localStorage.getItem('todolist');
+if(savedList === 'Null') {
+    todoForm.addEventListener("submit",handleTodoSubmit);
+}else{
+    reList(savedList);
+}
+//todoForm.addEventListener("submit",handleTodoSubmit);

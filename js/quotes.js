@@ -8,10 +8,6 @@ const quotes = [
         author:"Confucius"
     },
     {
-        quote:"For me, becoming isn’t about arriving somewhere or achieving a certain aim. I see it instead as forward motion, a means of evolving, a way to reach continuously toward a better self. The journey doesn’t end.",
-        author:"Michelle Obama"
-    },
-    {
         quote:"Confident people have a way of carrying themselves that makes others attracted to them.",
         author:"Sofia Vergara"
     },
@@ -45,8 +41,8 @@ const quotes = [
     },
 ]
 
-const quote = document.querySelector("#quote h5");
-const author = document.querySelector("#quote h6");
+const quote = document.querySelector("#quote h4");
+const author = document.querySelector("#quote h5");
 
 const todayQuote=quotes[Math.floor(Math.random()*quotes.length)];
 
