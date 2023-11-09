@@ -8,7 +8,7 @@ function getClock(){
     const minute = String(date.getMinutes()).padStart(2,"0");
     const second = String(date.getSeconds()).padStart(2,"0");
     
-    clock.innerText= `Now ${hour}:${minute}:${second}`
+    clock.innerText= `/${hour}:${minute}:${second}\\`
 }
 getClock();
 setInterval(getClock, 1000);
@@ -31,7 +31,7 @@ function ddayClock(){
     const diffMin = String(Math.floor((diff / (60*1000)) % 60)).padStart(2,"0");
     const diffSec = String(Math.floor(diff / 1000 % 60)).padStart(2,"0");
     
-    xclock.innerText= `Countdown to Christmas ${diffDay}:${diffHour}:${diffMin}:${diffSec}`
+    xclock.innerText= `/${diffDay}d ${diffHour}h ${diffMin}m ${diffSec}s\\`
 }
 ddayClock();
 setInterval(ddayClock, 1000);

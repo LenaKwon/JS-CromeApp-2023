@@ -1,20 +1,19 @@
-/* :root {
+:root {
     --main-white: #f0f0f0;
     --main-red: #be3144;
     --main-blue: #45567d;
     --main-gray: #303841;
-} */
+    --tree :rgb(25, 97, 25);
+}
 
 body{
     margin: auto;
     margin-bottom: 0;
     font-family: "Lato", sans-serif;
-    text-align: center;
-    
+    text-align: center;  
 }
 
-.container{
-    
+.container{  
     border: 2px solid black;
     border-radius: 20px;
 
@@ -35,7 +34,7 @@ body{
     /* display: flex; */
     justify-content: center;
     align-items: center;
-    padding: 10px 30px;
+    padding: 5px 30px;
     /* box-sizing: border-box; */
     /* position: relative; */
     font-size: 20px;
@@ -86,3 +85,17 @@ input[type='text']{
     transition: 0.25s;
     opacity: 0.7;
 }
+#clocks h4, #clocks h5{
+    color: var(--main-white);
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 50px;
+    opacity: 0.7;
+    margin: 5px;
+}
+#clocks h5{
+    background-color: var(--main-red);
+}
+#clocks h4{
+    background-color: var(--tree); 
+} 
