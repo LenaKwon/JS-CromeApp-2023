@@ -1,0 +1,88 @@
+/* :root {
+    --main-white: #f0f0f0;
+    --main-red: #be3144;
+    --main-blue: #45567d;
+    --main-gray: #303841;
+} */
+
+body{
+    margin: auto;
+    margin-bottom: 0;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+    
+}
+
+.container{
+    
+    border: 2px solid black;
+    border-radius: 20px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 80px 300px auto;
+}
+.item {
+    /* 바탕설정 */
+    background-color: rgba(228, 119, 79, 0.321);
+    margin:5px;
+    border: solid 2px rgb(255, 255, 255);
+    border-radius: 20px;  
+    /* outline: solid 2px rgb(255, 255, 255);  */
+    /* outline은 border와 다르게 주어진 속성에 따라 주변환경을 변화시키지 않음. */
+    
+    /* item 안의 정렬 */
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    /* box-sizing: border-box; */
+    /* position: relative; */
+    font-size: 20px;
+    color: black;
+    font-weight: 900;
+    text-shadow: 3px 0 0 rgba(white, .5);
+}
+.item:nth-child(6) {
+	grid-column: 3 / 4;
+	grid-row: 2/ 5;
+}
+.item:nth-child(7) {
+	grid-column: 1 / 3;
+	grid-row: 3/ 4;
+}
+img {
+    position:absolute;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    left: 0px;
+    top: 0px;
+    right:0px;
+    bottom:0px;
+    z-index: -1;
+    opacity:0.8;
+}
+.hidden{
+    display: none;
+}
+input[type='text']{
+    height: 20px;
+    width: 50%;
+    border: 1px solid var(--main-white);
+    padding: 15px 30px;/* 내용물 작성했을 때 여백감 */
+    border-radius: 50px;/* 굴곡 주면 padding 값도 그에 상응하게 적용하는 것이 좋음 */
+    /* margin: auto; */
+    margin: 20px 5px;
+    opacity:0.7;
+}
+.btn{
+    position: relative;
+    border: none;
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.25s;
+    opacity: 0.7;
+}

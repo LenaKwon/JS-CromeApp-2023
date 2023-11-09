@@ -1,0 +1,48 @@
+.container {
+    background-color: yellow;
+    border: 5px solid black;
+    display: grid;
+
+	/* grid-template-columns: 200px 200px 500px; */
+	grid-template-columns: 1fr 1fr 1fr;
+	/* grid-template-columns: repeat(3, 1fr) */
+	/* grid-template-columns: 200px 1fr */
+	/* grid-template-columns: 100px 200px auto */
+
+	/* grid-template-rows: 200px 200px 500px; */
+	/* grid-template-rows: 1fr 1fr 1fr; */
+	/* grid-template-rows: repeat(3, 1fr) */
+	/* grid-template-rows: 200px 1fr */
+	grid-template-rows: 80px 300px auto
+	
+  
+}
+.item {
+    /* 바탕설정 */
+    background-color: coral;
+    margin:10px;
+    /* border: solid 6px black;   */
+    outline: solid 6px black; 
+    /* outline은 border와 다르게 주어진 속성에 따라 주변환경을 변화시키지 않음. */
+    
+    
+    /* item 안의 정렬 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    font-size: 50px;
+    color: black;
+    font-weight: 900;
+    text-shadow: 3px 0 0 rgba(white, .5);
+}
+.item:nth-child(6) {
+	grid-column: 3 / 4;
+	grid-row: 2/ 5;
+}
+.item:nth-child(7) {
+	grid-column: 1 / 3;
+	grid-row: 3/ 4;
+}
