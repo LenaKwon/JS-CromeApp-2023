@@ -1,3 +1,4 @@
+//my code
 const inputForm = document.querySelector("#form")
 const maxInput = document.querySelector("#form div #maxinput");
 const guessInput = document.querySelector("#form div #guessinput");
@@ -10,9 +11,7 @@ function randomNumGenerator(event) {
     event.preventDefault();
     
     const maxNum = maxInput.value; 
-    //console.log(maxNum);
     const guessNum = guessInput.value;
-    //console.log(guessNum);
     
     //alert
     if(guessNum > maxNum){
@@ -20,12 +19,12 @@ function randomNumGenerator(event) {
     }else{
         //generate random number
         const randomNum =  Math.floor(Math.random()* maxNum);
-        //console.log(randomNum);
-
-        //display input numbers
+        
+        //display input number and random number
         displayNum.innerText =`You chose: ${guessNum}, machine chose: ${randomNum}`
 
         //result
+        // guessNum==randomNum? result.innerText = `You Won!` : result.innerText = `You lost...`
         if(guessNum==randomNum){
             result.innerText = `You Won!`
         }else{
@@ -35,8 +34,11 @@ function randomNumGenerator(event) {
     
 }
 //여기 form 전체 submit 으로 잡아야 함.
+inputForm.addEventListener("submit", randomNumGenerator);
 
-//solution
+
+
+// other solution
 // inputForm.addEventListener("submit",randomNumGenerator);
 
 // const guessForm = document.getElementById("js-guess");
