@@ -3,7 +3,7 @@
 // css나 html 에 붙여넣기 cmd+option+v 하면 사진 경로와 함께 복사본이 생성됨.
 // img 폴더로 옮겨서 정리
 
-const images = ['1.png','2.png','3.png','4.png'];
+const images = ['1.png','2.png','3.png','4.png','5.png'];
 const chosenImage = images[Math.floor(Math.random()*images.length)];
 
 // 우리가 만들고 싶은 동작은 배경이미지가 계속 변경되는 것이기 때문에

@@ -3,27 +3,32 @@
     --main-red: #be3144;
     --main-blue: #45567d;
     --main-gray: #303841;
-    --tree :rgb(25, 97, 25);
+    --main-green :#029115;
+    --main-gold:#FFC117;
+    --item-bg:rgba(255, 99, 71, 0.254);
 }
 
 body{
-    margin: auto;
-    margin-bottom: 0;
-    font-family: "Lato", sans-serif;
+    margin: 30px auto;
+    /* margin-bottom: 0; */
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;  
+    
 }
 
 .container{  
     border: 2px solid black;
     border-radius: 20px;
+    padding: 20px 20px;
+    margin: 0 20px;
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 80px 300px auto;
+    grid-template-rows: 40px 300px auto;
 }
 .item {
     /* 바탕설정 */
-    background-color: rgba(228, 119, 79, 0.321);
+    background-color:var(--item-bg);
     margin:5px;
     border: solid 2px rgb(255, 255, 255);
     border-radius: 20px;  
@@ -32,15 +37,15 @@ body{
     
     /* item 안의 정렬 */
     /* display: flex; */
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
-    padding: 5px 30px;
+    padding: 0 30px;
     /* box-sizing: border-box; */
     /* position: relative; */
     font-size: 20px;
-    color: black;
     font-weight: 900;
-    text-shadow: 3px 0 0 rgba(white, .5);
+    color: var(--main-gray);
+    /* text-shadow: 3px 0 0 rgba(white, .5); */
 }
 .item:nth-child(6) {
 	grid-column: 3 / 4;
@@ -65,24 +70,89 @@ img {
 .hidden{
     display: none;
 }
+#greeting, #todoList h2{
+    width: auto;
+    height: auto;
+    padding: 10px 0;
+    margin:20 0;
+    /* max-height: fit-content; */
+    font-weight: 400;
+    /* font-size: 25px; */
+    background-color: var(--main-white);
+    color: var(--main-gray);
+    border-radius: 10px;
+    
+    border-style: solid;
+    border-color: var(--main-red);
+    border-right-width: 7px;
+    border-bottom-width: 7px;
+    
+    /* margin: 2px; */
+    opacity: 0.9;
+}
 input[type='text']{
     height: 20px;
-    width: 50%;
-    border: 1px solid var(--main-white);
-    padding: 15px 30px;/* 내용물 작성했을 때 여백감 */
+    width: 40%;
+    /* border: 1px solid var(--main-white); */
+    padding: 10px 30px;/* 내용물 작성했을 때 여백감 */
     border-radius: 50px;/* 굴곡 주면 padding 값도 그에 상응하게 적용하는 것이 좋음 */
     /* margin: auto; */
     margin: 20px 5px;
     opacity:0.7;
+
+    border-style: solid;
+    border-color: var(--main-red);
+    border-width: 2px;
 }
 .btn{
-    position: relative;
+    /* position: relative; */
     border: none;
-    display: inline-block;
-    padding: 15px 30px;
+    /* display: inline-block; */
+    padding: 8px 20px;
     border-radius: 50px;
     text-decoration: none;
     transition: 0.25s;
+    opacity: 0.7;
+
+    border-style: solid;
+    border-color: var(--main-red);
+    border-width: 2px;
+}
+.liButton{
+    float: right;
+    margin-right: 10px;
+    /* position: relative; */
+    border: none;
+    /* display: inline-block; */
+    padding: 0;
+    border-radius: 2px;
+    text-decoration: none;
+    transition: 0.25s;
+    /* opacity: 0.7; */
+}
+ul{
+    /* list-style-image: url( "img/7.png" );
+    font-size: 25px; */
+    list-style: " ⭐️ " ;
+}
+li::marker {
+    color: var(--main-gold);
+    font-size: 1em;
+    font-weight: bold;
+} 
+li{
+    width: auto;
+    max-height: fit-content;
+    font-weight: 400;
+    font-size: 25px;
+    background-color: var(--main-white);
+    border-radius: 10px;
+    border-style: solid;
+    border-color: var(--main-red);
+    border-right-width: 5px;
+    border-bottom-width: 5px;
+    margin: 5px;
+    padding :0;
     opacity: 0.7;
 }
 #clocks h4, #clocks h5{
@@ -97,5 +167,5 @@ input[type='text']{
     background-color: var(--main-red);
 }
 #clocks h4{
-    background-color: var(--tree); 
+    background-color: var(--main-green); 
 } 

@@ -35,9 +35,9 @@
 </head>
 <body>
   <div class="container">
-    <div class="item">A</div>
-    <div class="item">B</div>
-    <div class="item">C</div>
+    <div class="item">Merry</div>
+    <div class="item">Christmas</div>
+    <div class="item">Happy New Year</div>
     <div class="item" id="clocks">
       <!-- emoji search : control+command+space -->
       <h4>🌟</h4> 
@@ -45,7 +45,7 @@
       <h4 id="clock"></h4>
       <h5>/until Christmas\</h5>
       <h4 id="xclock"></h4>
-      <div id="weather"></div>
+      <h5>\☐☐☐☐/</h5>
     </div>
     <div class="item">
       <form id="login-form" class="hidden" >
@@ -53,10 +53,11 @@
         <button class="btn">Log In</button>
       </form>
       <h1 id="greeting" class="hidden"></h1>
+      <div id="weather"></div>
     </div>
     <div class="item">
       <form id="todoForm" >
-        <input type="text" placeholder="Write a To-do and press the enter" required/>
+        <input type="text" maxlength="23" placeholder="Write a To-do"  required/>
         <button class="btn">Enter</button>
       </form>
       <ul id="todoList"><h2>To-Do List</h2></ul>
@@ -65,8 +66,8 @@
       <h4></h4>
       <h5></h5>
     </div>
-    <div class="item">H</div>
-    <div class="item">I</div>
+    <!-- <div class="item">H</div> -->
+    <!-- <div class="item">I</div> -->
     
   </div>
     <script src="js/loginCode.js"></script>

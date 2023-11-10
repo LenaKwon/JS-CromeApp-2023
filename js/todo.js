@@ -38,7 +38,12 @@ function listUp(newTodo){
     const button = document.createElement('button');
 
     li.appendChild(span);
-    button.innerText ='x'
+    // const text = document.createTextNode("\u00a0"); 
+    // span.appendChild(text); // 공백이 추가될 HTML element
+    
+    
+    button.innerText =`❎`
+    button.classList.add('liButton');
     li.appendChild(button);
     span.innerText=newTodo;
     todoList.appendChild(li);
