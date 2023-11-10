@@ -1,3 +1,5 @@
+// 로그인 폼 만들고 localStorage 를 사용해 입력값 저장해서 greeting 하기
+
 const loginForm =document.querySelector("#login-form");
 const loginInput =document.querySelector("#login-form input");
 const greeting = document.querySelector("#greeting");
@@ -14,7 +16,7 @@ function onLoginSubmit(event){
     // console.log(loginInput.value);
     // 비로소 콘솔에 밸류가 남아있게 됨 
     
-    //이름 입력시 입력창을 사라지게 한다.
+    // 이름 입력시 입력창을 사라지게 한다.
     loginForm.classList.add(HIDDEN_CLASS);
 
     // greeting에 사용자이름 활용하기 위해 입력 밸류를 변수에 저장해둔다.
@@ -51,7 +53,7 @@ function paintgreetings(username){
     // localStorage.setItem("username",USERNAME_KEY);
 
     // 이제 localStorage의 username 정보 유무를 조건으로 
-    // username이 없다면 form이 보이고, username이 저장되어있다면 greeting을 하는 조건문을 써보자.
+    // username이 없다면 form이 보이고, username이 이미 저장되어있다면 greeting을 하는 조건문을 써보자.
 
     const savedUsername = localStorage.getItem(USERNAME_KEY);
     //username 이 반복되니 USERNAME_KEY 변수에 넣어 get,set 바꿔줌
