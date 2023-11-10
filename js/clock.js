@@ -1,3 +1,5 @@
+// 현재시각과 크리스마스 디데이카운터를 만들기
+
 //today's clock
 const clock = document.querySelector("#clock");
 
@@ -20,7 +22,7 @@ const xclock = document.querySelector("#xclock");
 
 function ddayClock(){
     
-    const xmas = new Date (2023, 11, 25, 0, 0, 0);//월은 0부터 시작. "2023,12,25,0,0,0" 따옴표 넣으면 12로 해도 됨
+    const xmas = new Date (2023, 11, 25, 0, 0, 0); //월은 0부터 시작. "2023,12,25,0,0,0" 따옴표 넣으면 12로 해도 됨.
     const today = new Date ();
 
     // 크리스마스와 오늘과의 날짜 차이 : 밀리세컨단위
