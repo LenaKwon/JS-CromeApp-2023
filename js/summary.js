@@ -24,10 +24,10 @@ function handleClick(){
     // h1.className은 getter 이자 setter 이기 때문에 update 할 수 있다.
     // h1 태그에 clicked 란 class가 없으면 추가해주고, 
     // 추가한 후엔 다시 없애서 디폴트 상태를 만들어 동작의 무한 반복이 가능하게 함. 
-    // clicked 클래스가 추가된 상태에선 clicked css조건에 따라 색이 변경되고, 제거된 상태에선 디폴트로 돌아감.
+    // clicked 클래스가 h1에 추가된 상태에선 clicked 클래스에 적용된 css조건에 따라 색이 변경되고, 제거된 상태에선 디폴트로 돌아감.
     // 이는 toggle의 기능을 풀어둔 코드라고 볼 수 있다.
 
-    //const clickedClass = "clicked";
+    // const clickedClass = "clicked";
 
     // css에 지정한 class 이름을 그대로 쓰기보다는 변수에 저장해서 쓰면 나중에 변경했을때 수정도 쉬움.
     
@@ -39,8 +39,8 @@ function handleClick(){
 
     // # 버그 위험의 상황
     // h1 태그에 이미 다른 클래스이름이 있다면 className을 사용하는 위의 코드는 
-    // 기존의 클래스네임을 지워버리고 대체되어버리는 버그가 생길 수 있다.
-    // 그렇다면 어떻게 기존의 클래스이름도 유지하면서 다른 클래스이름을 추가/제거할 수 있을까?
+    // 기존의 클래스네임을 지워버린 후 대체해 버리는 버그가 생길 수 있다.
+    // 그렇다면 어떻게 기존에 있던 클래스이름도 유지하면서 다른 클래스이름을 추가/제거할 수 있을까?
     // 이때 필요한 것이 classList 이다.  
     // classList 는 유사배열로서 해당태그의 모든 클래스 네임을 가지고 있다.
     // classList는 DOMTokenList라는 객체를 가지고 있고, 
