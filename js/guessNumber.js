@@ -1,3 +1,5 @@
+// Guess Number Game 만들기
+
 //my code
 const inputForm = document.querySelector("#form")
 const maxInput = document.querySelector("#form div #maxinput");
