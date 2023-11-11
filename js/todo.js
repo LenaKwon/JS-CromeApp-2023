@@ -93,9 +93,9 @@ function deletehandler(event){
 // localStorage에 저장되어있는 값이 있으면 todo list에 나타내기 위한 과정.
 const savedTodos = localStorage.getItem(toDosKey);
 if(savedTodos){
-    console.log(savedTodos);
+    // console.log(savedTodos);
     const parsedTodos = JSON.parse(savedTodos);
-    console.log(parsedTodos);
+    // console.log(parsedTodos);
     //restore old value to the toDos array
     toDos = parsedTodos;
     // forEach으로 array 밸류 각각에 대해 함수실행
