@@ -1,3 +1,7 @@
+// todo list 만들고, localStorage에 저장,삭제까지 구현하기
+// 아래코드는 스스로의 이해를 위해 호이스팅을 무시한 순서로 작성된 코드이다.
+// 호이스팅을 고려한 코드 순서로 재작성한 뒤 파일을 추가할 예정.
+
 const todoForm = document.querySelector("#todoForm");
 const todoInput = document.querySelector("#todoForm input");
 const todoList = document.querySelector("#todoList");
