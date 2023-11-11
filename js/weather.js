@@ -4,7 +4,7 @@ function onGeoOk(position){
     console.log(position);
     const lat = position.coords.latitude;
     const lon = position.coords.longitude;
-    console.log('You live in',lat,lon);
+    // console.log('You live in',lat,lon);
     //https://openweathermap.org/api
     // api > current weather data > api doc > api call
     // {lat} {log} position 에서 얻은 위도 경도값 복붙 
@@ -40,11 +40,14 @@ function onGeoOk(position){
     .then(response => { return response.json();})
     .then(responseData => {console.log(responseData); return responseData;})
     .then((data)=>{
-        // console.log(data.name, data.weather[0].main);
+        console.log(data.name, data.weather[0].main, data.main.temp);
         const city = document.querySelector("#weather h3:first-child");
         const weather= document.querySelector("#weather h3:last-child");
+        const degree=document.querySelector("#weather h2");
         city.innerText = data.name ;
         weather.innerText = `Today's weather is ${data.weather[0].main}`;
+        degree.innerText =`${data.main.temp}C`
+        
     });
 
 

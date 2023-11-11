@@ -66,11 +66,11 @@ img {
 #greeting, #todoList h2,#weather{
     width: auto;
     height: auto;
-    padding: 10px 0;
+    padding:  0;
     margin: 15px 2px;
     font-weight: 400;
     background-color: var(--main-white);
-    color: var(--main-blue);
+    color: var(--main-gray);
     border-radius: 10px;
     
     border-style: solid;
@@ -78,7 +78,7 @@ img {
     border-right-width: 7px;
     border-bottom-width: 7px;
     
-    opacity: 0.9;
+    opacity: 0.8;
 }
 input[type='text']{
     height: 20px;
@@ -151,4 +151,7 @@ li{
 #clocks h4{
     background-color: var(--main-green); 
 }
+/* #weather{
+    padding: 5px;
+} */
 
