@@ -12,17 +12,20 @@ body{
     margin: 20px auto;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;  
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
 }
 
 .container{  
-    border: 2px solid black;
-    border-radius: 20px;
-    padding: 10px 20px;
-    margin: 0 20px;
-
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto auto;
+
+    /* border: 2px solid black; */
+    border-radius: 20px;
+    padding: 10px 5%;
+    /* margin: 5% 50%; */
 }
 .item {
     /* 바탕설정 */
@@ -67,9 +70,9 @@ img {
     display: none;
 }
 #greeting, #todoList h2,#weather{
-    width: auto;
+    width: 70%;
     height: auto;
-    padding: 10px 30px;
+    padding: 5px 20px;
     margin: 0 2px;
     font-weight: 400;
     background-color: var(--main-white);
@@ -154,7 +157,6 @@ li{
 #clocks h4{
     background-color: var(--main-green); 
 }
-/* #weather{
-    padding: 5px;
-} */
+
+
 
