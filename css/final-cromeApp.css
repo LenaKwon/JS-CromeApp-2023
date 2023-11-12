@@ -9,7 +9,7 @@
 }
 
 body{
-    margin: 30px auto;
+    margin: 20px auto;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;  
 }
@@ -17,25 +17,28 @@ body{
 .container{  
     border: 2px solid black;
     border-radius: 20px;
-    padding: 20px 20px;
+    padding: 10px 20px;
     margin: 0 20px;
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 40px 300px auto;
+    grid-template-rows: auto auto auto;
 }
 .item {
     /* 바탕설정 */
     background-color:var(--item-bg);
-    margin:5px;
+    margin:10px 10px;
     border: solid 2px rgb(255, 255, 255);
     border-radius: 20px;  
     /* outline: solid 2px rgb(255, 255, 255);  */
     /* outline은 border와 다르게 주어진 속성에 따라 주변환경을 변화시키지 않음. */
     
     /* item 안의 정렬 */
+    display: flex;
+    flex-direction: column; 
     align-items: center;
-    padding: 0 30px;
+    
+    padding: 10px 30px;
     font-size: 20px;
     font-weight: 900;
     color: var(--main-gray);
@@ -49,9 +52,9 @@ body{
 	grid-row: 3/ 4;
 }
 img {
-    position:absolute;
+    position:fixed;
     width:100%;
-    height:100%;
+    height:110%;
     object-fit: cover;
     left: 0px;
     top: 0px;
@@ -66,8 +69,8 @@ img {
 #greeting, #todoList h2,#weather{
     width: auto;
     height: auto;
-    padding:  0;
-    margin: 15px 2px;
+    padding: 10px 30px;
+    margin: 0 2px;
     font-weight: 400;
     background-color: var(--main-white);
     color: var(--main-gray);
