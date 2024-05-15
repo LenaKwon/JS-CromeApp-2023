@@ -1,16 +1,27 @@
 # JS-CromeApp-2023
-Crome App using vanilla Javascript
+## Crome App using vanilla Javascript
+
+visit the site
 
 [https://lenakwon.github.io/JS-CromeApp-2023/](https://lenn-dev.github.io/JS-CromeApp-2023/)
 
 </br>
-</br>
-</br>
-
 
 ![react_cromeapp-ezgif com-video-to-gif-converter](https://github.com/lenn-dev/JS-CromeApp-2023/assets/37726487/e9b8471c-cb1a-4437-9726-9ef6921a3159)
 
-</br>
+
+## Implemented features
+
+- JS Clock
+
+- JS To Do List
+
+- Get Geolocation
+
+- Get Weather Information
+
+- Deploy to Github Pages
+
 </br>
 </br>
 
