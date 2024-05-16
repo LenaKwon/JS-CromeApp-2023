@@ -10,16 +10,22 @@ visit the site
 ![react_cromeapp-ezgif com-video-to-gif-converter](https://github.com/lenn-dev/JS-CromeApp-2023/assets/37726487/e9b8471c-cb1a-4437-9726-9ef6921a3159)
 
 
+## what I learned
+
+- Variables
+- Functions
+- Data Types
+- Arrays, Objects
+- DOM Functions
+- Events
+- if / else / for
+
 ## Implemented features
 
 - JS Clock
-
 - JS To Do List
-
 - Get Geolocation
-
 - Get Weather Information
-
 - Deploy to Github Pages
 
 </br>
